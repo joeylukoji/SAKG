@@ -4,13 +4,23 @@ Merci de votre intérêt ! SAKG est un projet open source sous licence [MIT](LIC
 
 ## Prendre une tâche
 
-1. Choisir une tâche dans la section **[Tâches ouvertes](README.md#tâches-ouvertes)** du README
-   (chaque tâche a un identifiant `Txx`, un module, une difficulté et ses dépendances).
-2. Ouvrir une issue `Txx — <titre>` (ou commenter l'issue existante) pour signaler que vous la
-   prenez : cela évite que deux personnes travaillent sur la même chose.
-3. Créer une branche `txx-description-courte` depuis `main`.
-4. Ouvrir une pull request qui cite la tâche ; le modèle de PR rappelle la liste de vérifications.
+### Règle : une proposition approuvée avant de coder
 
+Pour que deux personnes ne travaillent jamais sur la même partie, **aucun travail ne commence
+sans l'accord du mainteneur** ([@joeylukoji](https://github.com/joeylukoji)) :
+
+1. **Choisir une tâche** dans [Tâches ouvertes](README.md#tâches-ouvertes) et vérifier qu'aucune
+   PR ouverte ne la cite déjà (onglet *Pull requests*, recherche `Txx`).
+2. **Ouvrir une PR de proposition**, en brouillon (*draft*), sur une branche
+   `txx-description-courte` créée depuis `main`. Titre : `[Proposition] Txx — <titre>`.
+   Elle ne contient pas encore de code : sa description explique ce que vous voulez faire,
+   les fichiers et modules touchés, l'approche envisagée et une estimation.
+3. **Attendre l'approbation.** Le mainteneur répond dans la PR : approuvée (la tâche vous est
+   attribuée), à revoir, ou refusée. **Ne commencez à coder qu'après l'approbation.**
+4. **Coder dans cette même PR**, puis la passer en « Ready for review » quand la
+   [Definition of Done](#definition-of-done) est remplie.
+
+Une tâche attribuée sans activité pendant deux semaines peut être réattribuée.
 Les tâches marquées 🟢 sont de bonnes premières contributions.
 
 ## Environnement

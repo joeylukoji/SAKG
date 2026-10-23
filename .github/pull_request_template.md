@@ -1,6 +1,12 @@
 ## Tâche
 
-<!-- Identifiant de la tâche du README (ex. T07) ou numéro d'issue -->
+<!-- Identifiant de la tâche du README (ex. T07).
+     Première étape : PR brouillon intitulée « [Proposition] Txx — <titre> », sans code.
+     Ne codez qu'après l'approbation du mainteneur. -->
+
+## Proposition
+
+<!-- Ce que vous voulez faire, modules et fichiers touchés, approche, estimation -->
 
 ## Ce qui change
 

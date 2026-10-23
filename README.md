@@ -140,8 +140,14 @@ journal de ce qui a été livré : [`docs/EVOLUTION.md`](docs/EVOLUTION.md).
 
 ## Tâches ouvertes
 
-Chaque tâche est indépendante sauf mention dans « Dépend de ». Pour en prendre une :
-voir [`CONTRIBUTING.md`](CONTRIBUTING.md) (ouvrir une issue `Txx`, puis une PR).
+Chaque tâche est indépendante sauf mention dans « Dépend de ».
+
+> **Avant de travailler sur une tâche**, ouvrez une PR de proposition (brouillon) intitulée
+> `[Proposition] Txx — <titre>` qui explique ce que vous voulez faire. **Vous ne commencez à
+> coder qu'après l'approbation du mainteneur** : c'est ce qui garantit que personne ne
+> travaille sur une partie déjà prise. Une tâche citée par une PR ouverte est déjà prise.
+> Détails : [`CONTRIBUTING.md`](CONTRIBUTING.md#prendre-une-tâche).
+
 Difficulté : 🟢 facile (≤ ½ jour) · 🟡 moyenne (1–2 jours) · 🔴 difficile (plusieurs jours).
 
 ### A. Dette du raisonnement et de la validation (prochain sprint, S10)
@@ -234,8 +240,12 @@ exactitude de l'analyse d'impact. Détails dans [`docs/ARCHITECTURE.md`](docs/AR
 
 ## Contribuer
 
-Les contributions sont bienvenues : choisir une tâche dans [Tâches ouvertes](#tâches-ouvertes)
-et suivre [`CONTRIBUTING.md`](CONTRIBUTING.md).
+Les contributions sont bienvenues :
+
+1. choisir une tâche libre dans [Tâches ouvertes](#tâches-ouvertes) ;
+2. ouvrir une PR **brouillon** `[Proposition] Txx — <titre>` qui décrit ce que vous voulez faire ;
+3. attendre l'approbation du mainteneur, **puis seulement** coder dans cette même PR ;
+4. suivre [`CONTRIBUTING.md`](CONTRIBUTING.md) (environnement, règles d'architecture, Definition of Done).
 
 ## Licence
 
