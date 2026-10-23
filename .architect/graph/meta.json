@@ -1,0 +1,9 @@
+{
+  "version": 11,
+  "graph_hash": "db436b64a2a37580d5cfbe5abab0bedc262b42fb5c9c427c10395038cefe391a",
+  "commit_sha": "9905a30aa743456fd2d1d2fd335435ba7e81b810",
+  "label": "ReplaceObservedLayerCommand",
+  "created_at": "2026-09-22T12:02:42.106998+00:00",
+  "node_count": 546,
+  "edge_count": 1323
+}

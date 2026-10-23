@@ -1,0 +1,21 @@
+# Règles d'architecture d'AGENTS.md, vérifiées par « sakg validate » (S9).
+#
+# Reprend tests/architecture/test_core_dependencies.py, qui reste en place : ce test AST est
+# indépendant d'un « sakg reverse » à jour, ces règles vérifient le graphe enregistré.
+
+- type: layer_dependency
+  id: agents-md-couches
+  layers:
+    - sakg.domain
+    - sakg.graph
+    - sakg.reverse
+    - sakg.analysis
+    - sakg.validation
+    - sakg.generation
+    - sakg.ai
+    - sakg.infrastructure
+    - sakg.application
+    - sakg.interfaces
+
+- type: no_cycle
+  id: agents-md-no-cycle
