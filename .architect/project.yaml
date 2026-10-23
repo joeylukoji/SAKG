@@ -1,0 +1,7 @@
+name: SAKG
+languages:
+- python
+source_roots:
+- src
+ignore: []
+rules: []
