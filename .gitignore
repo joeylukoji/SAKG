@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+session_memory.json
+
+# Historique local du graphe : regenerable, non versionne
+.architect/versions/
+
+# Skills d'agents IA : copies de dépôts tiers, restaurées depuis skills-lock.json
+.claude/
+.kilo/

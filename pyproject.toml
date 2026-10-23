@@ -1,0 +1,75 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sakg"
+version = "0.1.0"
+description = "Software Architecture Knowledge Graph"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "joeylukoji" }]
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.6",
+    "networkx>=3.2",
+    "typer>=0.12",
+    "pyyaml>=6.0",
+    "tree-sitter>=0.23",
+    "tree-sitter-typescript>=0.23",
+]
+
+[project.urls]
+Repository = "https://github.com/joeylukoji/SAKG"
+Issues = "https://github.com/joeylukoji/SAKG/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "types-networkx",
+    "types-PyYAML",
+]
+
+[project.scripts]
+sakg = "sakg.interfaces.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sakg"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+src = ["src", "tests"]
+extend-exclude = [".claude"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "C4", "UP", "SIM"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["sakg"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_ignores = true
+plugins = ["pydantic.mypy"]
+mypy_path = "src"
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+
+[[tool.mypy.overrides]]
+module = ["tree_sitter_typescript"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
