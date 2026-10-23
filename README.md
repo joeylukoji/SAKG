@@ -1,5 +1,10 @@
 # SAKG — Software Architecture Knowledge Graph
 
+> [!IMPORTANT]
+> **Vous voulez contribuer ?** Lisez d'abord le guide de contribution :
+> **[CONTRIBUTING.md](https://github.com/joeylukoji/SAKG/blob/main/CONTRIBUTING.md)**.
+> Aucun travail ne commence sans une PR de proposition approuvée par le mainteneur.
+
 [![CI](https://github.com/joeylukoji/SAKG/actions/workflows/ci.yml/badge.svg)](https://github.com/joeylukoji/SAKG/actions/workflows/ci.yml)
 [![Licence : MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](LICENSE)
 ![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)
